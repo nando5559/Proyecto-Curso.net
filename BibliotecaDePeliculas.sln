@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaDePeliculas", "BibliotecaDePeliculas\BibliotecaDePeliculas.csproj", "{2CA9E19A-836E-4F23-B34D-ABCD3B8246BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{333A9E81-3709-4395-8BC4-FD96BB5FA2B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reglas", "Reglas\Reglas.csproj", "{A80A334C-B908-401B-A680-132E82AF4059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CA9E19A-836E-4F23-B34D-ABCD3B8246BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA9E19A-836E-4F23-B34D-ABCD3B8246BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA9E19A-836E-4F23-B34D-ABCD3B8246BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA9E19A-836E-4F23-B34D-ABCD3B8246BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{333A9E81-3709-4395-8BC4-FD96BB5FA2B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333A9E81-3709-4395-8BC4-FD96BB5FA2B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333A9E81-3709-4395-8BC4-FD96BB5FA2B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333A9E81-3709-4395-8BC4-FD96BB5FA2B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A80A334C-B908-401B-A680-132E82AF4059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A80A334C-B908-401B-A680-132E82AF4059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A80A334C-B908-401B-A680-132E82AF4059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A80A334C-B908-401B-A680-132E82AF4059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
