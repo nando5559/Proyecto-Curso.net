@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiblioDePeliculas", "BiblioDePeliculas\BiblioDePeliculas.csproj", "{3AF9E018-7229-4B16-9451-8CB3E7C5F240}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{BD661488-E96D-4B7C-8F31-D1F1B95C4D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reglas", "Reglas\Reglas.csproj", "{0D62543C-0FBB-4F9B-8AAE-4D8A8B2E9541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AF9E018-7229-4B16-9451-8CB3E7C5F240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AF9E018-7229-4B16-9451-8CB3E7C5F240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AF9E018-7229-4B16-9451-8CB3E7C5F240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AF9E018-7229-4B16-9451-8CB3E7C5F240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD661488-E96D-4B7C-8F31-D1F1B95C4D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD661488-E96D-4B7C-8F31-D1F1B95C4D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD661488-E96D-4B7C-8F31-D1F1B95C4D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD661488-E96D-4B7C-8F31-D1F1B95C4D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D62543C-0FBB-4F9B-8AAE-4D8A8B2E9541}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D62543C-0FBB-4F9B-8AAE-4D8A8B2E9541}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D62543C-0FBB-4F9B-8AAE-4D8A8B2E9541}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D62543C-0FBB-4F9B-8AAE-4D8A8B2E9541}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
