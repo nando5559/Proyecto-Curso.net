@@ -26,12 +26,23 @@ namespace Reglas
             Grabar(lista);
         }
 
+
         public void Grabar(IEnumerable<T> lista)
         {
             var listaSerializa = JsonConvert.SerializeObject(lista);
             System.IO.File.WriteAllText(_nombreArchivo, listaSerializa);
         }
 
+               public IEnumerable<T> ObtenerPeliculaPorNombre(string nombre)
+        {
+            var pelicula =Recuperar();
+
+         var PeliculaObtenida =
+                Pelicula.Where(Pelicula => Pelicula.Nombre == nombre)
+                    .OrderBy(Pelicula => Pelicula.Nombre);
+
+            return PeliculaObtenida;
+        }
 
         public IEnumerable<T> Recuperar()
         {
