@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Genero:EntidadBase
+    public interface IEntidad
     {
-        public string Descripcion { get; set; }
+        Guid Id { get; set; }
     }
 }
