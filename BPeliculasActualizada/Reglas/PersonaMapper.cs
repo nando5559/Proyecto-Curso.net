@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Entidades;
+﻿using Entidades;
+
 namespace Reglas
 {
-  
-        public class PersonaMapper : BaseMapper<Persona>
-        {
-        }
 
+    public class PersonaMapper : BaseMapper<Persona>
+    {
     }
+
+}
 

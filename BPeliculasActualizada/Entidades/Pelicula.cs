@@ -13,6 +13,11 @@ namespace Entidades
             IdActores = new List<Guid>();
         }
 
+        [JsonIgnore]
+        public Genero Genero { get; set; }
+
+        public Guid IdGenero { get; set; }
+
         public string Nombre { get; set; }
 
         public int AnioEstreno { get; set; }
@@ -22,6 +27,8 @@ namespace Entidades
         [JsonIgnore]
         public List<Persona> Actores { get; private set; }
 
+
+        public List<Guid> IdDirectores { get; set; }
 
         [JsonIgnore]
         public List<Persona> Directores { get; private set; }

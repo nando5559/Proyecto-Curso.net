@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntidadBase.cs" />
+    <Compile Include="Genero.cs" />
     <Compile Include="IEntidad.cs" />
     <Compile Include="Pelicula.cs" />
     <Compile Include="Persona.cs" />
