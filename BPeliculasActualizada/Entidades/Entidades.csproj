@@ -44,7 +44,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Genero.cs" />
+    <Compile Include="EntidadBase.cs" />
+    <Compile Include="IEntidad.cs" />
     <Compile Include="Pelicula.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
