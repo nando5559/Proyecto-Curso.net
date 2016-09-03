@@ -45,8 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseMapper.cs" />
-    <Compile Include="BibliotecaRule.cs" />
     <Compile Include="EntityPersistor.cs" />
+    <Compile Include="PeliculaMapper.cs" />
     <Compile Include="PersonaMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
-namespace BPeliculasActualizada
+
+namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
     {
@@ -19,18 +19,13 @@ namespace BPeliculasActualizada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Persona persona1 =new Persona();
-            
+            textBox1.Text = "The path for the executable file that " +
+               "started the application is: " +
+               Application.StartupPath;
+        }
+        private void PrintStartupPath()
+        {
            
-            
-            Pelicula pelicula1 = new Pelicula();
-            pelicula1.Nombre = "Dia de la independencia";
-            pelicula1.AnioEstreno = 12 / 06 / 2016;
-            pelicula1.Actores.Add()
-              
-           
-               
-            
         }
     }
 }

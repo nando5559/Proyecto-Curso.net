@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entidades
+namespace WindowsFormsApplication2
 {
-    public class Genero:EntidadBase
+    class EntityPersistor
     {
-        public string Descripcion { get; set; }
     }
 }

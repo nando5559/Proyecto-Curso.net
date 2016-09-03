@@ -1,11 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
-
 namespace Reglas
 {
-    internal class EntityPersistor<T>
+  internal  class EntityPersistor<T>
     {
-        private string _nombreArchivo;
+             private string _nombreArchivo;
 
         public EntityPersistor()
         {
@@ -38,4 +41,6 @@ namespace Reglas
             return lista;
         }
     }
+       
 }
+
