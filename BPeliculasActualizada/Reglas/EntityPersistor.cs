@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Newtonsoft.Json;
+
 namespace Reglas
 {
-    class EntityPersistor
-    {
-          public class EntityPersistor<T>
+    internal class EntityPersistor<T>
     {
         private string _nombreArchivo;
 
@@ -35,10 +30,12 @@ namespace Reglas
 
         public IEnumerable<T> Recuperar()
         {
+            if (!System.IO.File.Exists(_nombreArchivo))
+                return new List<T>();
+
             var contenido = System.IO.File.ReadAllText(_nombreArchivo);
             var lista = JsonConvert.DeserializeObject<List<T>>(contenido);
             return lista;
         }
-
     }
 }
