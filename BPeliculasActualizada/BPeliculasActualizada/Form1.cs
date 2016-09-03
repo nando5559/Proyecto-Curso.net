@@ -26,11 +26,9 @@ namespace BPeliculasActualizada
             Pelicula pelicula1 = new Pelicula();
             pelicula1.Nombre = "Dia de la independencia";
             pelicula1.AnioEstreno = 12 / 06 / 2016;
-            pelicula1.Actores.Add()
-              
-           
-               
-            
+            //pelicula1.Actores.Add();
+
+
         }
     }
 }

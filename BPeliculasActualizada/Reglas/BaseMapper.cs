@@ -54,7 +54,5 @@ namespace Reglas
             return todas.
                 FirstOrDefault(p => p.Id.Equals(id));
         }
-
-
     }
 }
