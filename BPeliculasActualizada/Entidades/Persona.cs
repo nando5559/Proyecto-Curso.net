@@ -8,9 +8,12 @@ namespace Entidades
 {
   public  class Persona:EntidadBase
     {
-        public string Nombre { get; set; }
+        public class Persona:EntidadBase
+    {
         public string Apellido { get; set; }
-        public DateTime FechaNacimiento { get; set; }
-        public string Nacionalidad { get; set; }
+        public string Nombre { get; set; }
+        public DateTime FechaNacimento { get; set; }
+
     }
+}
 }
