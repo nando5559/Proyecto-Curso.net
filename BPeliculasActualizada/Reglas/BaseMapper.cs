@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Entidades;
-
+using Newtonsoft.Json;
 namespace Reglas
 {
     public abstract class BaseMapper<T> where T: IEntidad
