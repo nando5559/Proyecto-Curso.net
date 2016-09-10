@@ -25,26 +25,43 @@ namespace BPeliculasActualizada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-            string NombreData, ApellidoData;
-            DateTime FechaDeNacimientoData;
-            NombreData = textBox1.Text;
-            ApellidoData = textBox2.Text;
-            FechaDeNacimientoData = Convert.ToDateTime(textBox3.Text);
-            DatosPersonas.Rows.Add(NombreData, ApellidoData, FechaDeNacimientoData);
-           
-            Persona persona1 = new Persona();
-            persona1.Nombre = NombreData;
-            persona1.Apellido = ApellidoData;
-            persona1.FechaNacimento = FechaDeNacimientoData;
+            try
+            {
 
-            PersonaMapper pMapper = new PersonaMapper();
-            pMapper.Grabar(persona1);
-            textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text="";
-             // PersonaMapper personaslista = new PersonaMapper();
-            //  DatosPersonas.DataSource = personaslista.ObtenerTodas();
+                string NombreData, ApellidoData;
+                DateTime FechaDeNacimientoData;
+                NombreData = textBox1.Text;
+                ApellidoData = textBox2.Text;
+                FechaDeNacimientoData = Convert.ToDateTime(textBox3.Text);
+
+                if (textBox1.Text !="" && textBox2.Text!="" && textBox3.Text!="")
+                {
+                    DatosPersonas.Rows.Add(NombreData, ApellidoData, FechaDeNacimientoData);
+                }
+                else
+                {
+                    MessageBox.Show("Complete todos los campos");
+                }
+
+                Persona persona1 = new Persona();
+                persona1.Nombre = NombreData;
+                persona1.Apellido = ApellidoData;
+                persona1.FechaNacimento = FechaDeNacimientoData;
+
+                PersonaMapper pMapper = new PersonaMapper();
+                pMapper.Grabar(persona1);
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+
+            }
+            catch (AplicattionException ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+          
+            
         }
 
         private void PersonasForm_Load(object sender, EventArgs e)
@@ -90,6 +107,7 @@ namespace BPeliculasActualizada
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             string NombreData, ApellidoData;
             DateTime FechaDeNacimientoData;
             NombreData = textBox1.Text;
@@ -119,6 +137,11 @@ namespace BPeliculasActualizada
          DatosPersonas.Rows.RemoveAt(posicion);
         
        
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Close();
         }
         }
     }

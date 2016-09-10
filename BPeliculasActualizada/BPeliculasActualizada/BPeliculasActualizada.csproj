@@ -54,6 +54,14 @@
     <Compile Include="ActoresYDirectoresForm.Designer.cs">
       <DependentUpon>ActoresYDirectoresForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Aplicattion.cs" />
+    <Compile Include="AplicattionException.cs" />
+    <Compile Include="BuscarPersonasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPersonasForm.Designer.cs">
+      <DependentUpon>BuscarPersonasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ActoresYDirectoresForm.resx">
       <DependentUpon>ActoresYDirectoresForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPersonasForm.resx">
+      <DependentUpon>BuscarPersonasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

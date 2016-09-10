@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Entidades;
 using Newtonsoft.Json;
+using Reglas;
 namespace Reglas
 {
     public abstract class BaseMapper<T> where T: IEntidad
@@ -53,6 +54,10 @@ namespace Reglas
 
             return todas.
                 FirstOrDefault(p => p.Id.Equals(id));
+ }
+
+            
+
+        
         }
-    }
 }

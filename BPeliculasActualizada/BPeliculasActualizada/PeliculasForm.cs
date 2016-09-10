@@ -16,26 +16,28 @@ namespace BPeliculasActualizada
         public PeliculasForm()
         {
             InitializeComponent();
+            PeliculaMapper PeliculaLista = new PeliculaMapper();
+            DatosPeliculas.DataSource = PeliculaLista.ObtenerTodas();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string NombrePeli, 
-             Genero, Actores, Directores;
+            string NombrePeli; 
+              
             int  AnioEstrenoD;
             NombrePeli = textBox1.Text;
-            GeneroD = Convert.ToString(textBox2.Text);
+            GeneroD = textBox2.Text;
             AnioEstrenoD = Convert.ToInt32(textBox3.Text);
-            Actores = textBox4.Text;
-            Directores = textBox5.Text;
+         var   ActoresD = textBox4.Text;
+          var   DirectoresD = textBox5.Text;
             DatosPeliculas.Rows.Add(NombrePeli, GeneroD,AnioEstrenoD,ActoresD,DirectoresD);
-
+           
             Pelicula peli = new Pelicula();
             peli.Nombre = NombrePeli;
-            peli.Genero = GeneroD;
-            peli.AnioEstreno = Convert.ToInt32(AnioEstrenoD);
-            peli.Actores = ActoresD;
-            peli.Actores = DirectoresD;
+          peli.Genero = (Genero)GeneroD;
+            peli.AnioEstreno = AnioEstrenoD;
+           // peli.Actores= ActoresD ;
+          // peli.Actores = DirectoresD;
            PeliculaMapper peliMapper = new PeliculaMapper();
             peliMapper.Grabar(peli);
             textBox1.Text = "";
@@ -55,5 +57,15 @@ namespace BPeliculasActualizada
         public object ActoresD { get; set; }
 
         public object DirectoresD { get; set; }
+
+        private void DatosPeliculas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void PeliculasForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

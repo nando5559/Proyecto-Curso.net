@@ -21,22 +21,24 @@ namespace BPeliculasActualizada
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Persona persona1 =new Persona();
-            persona1.Nombre = "Will";
-            persona1.Apellido = "Smith";
+            //Persona persona1 =new Persona();
+            //persona1.Nombre = "Will";
+           // persona1.Apellido = "Smith";
 
-            var genero = new Genero();
-            genero.Descripcion = "Ciencia ficcion";
+          //  var genero = new Genero();
+          //  genero.Descripcion = "Ciencia ficcion";
 
-            Pelicula pelicula1 = new Pelicula();
-            pelicula1.Nombre = "Dia de la independencia";
-            pelicula1.AnioEstreno = 12 / 06 / 2016;
-            pelicula1.Actores.Add(persona1);
-            pelicula1.Genero = genero;
+           // Pelicula pelicula1 = new Pelicula();
+           // pelicula1.Nombre = "Dia de la independencia";
+           // pelicula1.AnioEstreno = 12 / 06 / 2016;
+           // pelicula1.Actores.Add(persona1);
+           // pelicula1.Genero = genero;
 
 
-            var pm = new PeliculaMapper();
-            pm.Grabar(pelicula1);
+            //var pm = new PeliculaMapper();
+           // pm.Grabar(pelicula1);
+            var pelisform = new PeliculasForm();
+            pelisform.Show();
 
         }
 
@@ -56,6 +58,11 @@ namespace BPeliculasActualizada
         {
            var mper =new  MostrarPersonasForm();
            mper.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

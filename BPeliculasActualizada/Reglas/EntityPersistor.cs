@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+
 namespace Reglas
 {
   internal  class EntityPersistor<T>
@@ -40,7 +41,9 @@ namespace Reglas
             var lista = JsonConvert.DeserializeObject<List<T>>(contenido);
             return lista;
         }
+       
+        }
     }
        
-}
+
 
