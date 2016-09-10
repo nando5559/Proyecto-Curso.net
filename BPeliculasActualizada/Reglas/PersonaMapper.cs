@@ -5,6 +5,8 @@ namespace Reglas
 
     public class PersonaMapper : BaseMapper<Persona>
     {
+      
+
     }
 
 }

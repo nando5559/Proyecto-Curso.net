@@ -60,6 +60,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostrarPersonasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarPersonasForm.Designer.cs">
+      <DependentUpon>MostrarPersonasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeliculasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeliculasForm.Designer.cs">
+      <DependentUpon>PeliculasForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarPersonasForm.resx">
+      <DependentUpon>MostrarPersonasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeliculasForm.resx">
+      <DependentUpon>PeliculasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonasForm.resx">
       <DependentUpon>PersonasForm.cs</DependentUpon>

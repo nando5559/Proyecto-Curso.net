@@ -31,5 +31,7 @@ namespace Reglas
 
             base.Grabar(entidades);
         }
+
+       
     }
 }

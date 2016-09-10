@@ -48,7 +48,14 @@ namespace BPeliculasActualizada
         private void button2_Click(object sender, EventArgs e)
         {
             var pf = new PersonasForm();
-            pf.Show();
+           pf.Show();
+          
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+           var mper =new  MostrarPersonasForm();
+           mper.Show();
         }
     }
 }
