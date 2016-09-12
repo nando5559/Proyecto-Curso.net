@@ -14,7 +14,7 @@ namespace Reglas
         {
             foreach (var pelicula in entidades)
             {
-                pelicula.IdGenero = pelicula.Genero.Id;
+                //pelicula.IdGenero = pelicula.Genero.Id;
 
                 pelicula.IdActores = new List<Guid>();
                 foreach (var actor in pelicula.Actores)

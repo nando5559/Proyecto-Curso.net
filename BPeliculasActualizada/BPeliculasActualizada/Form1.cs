@@ -64,5 +64,11 @@ namespace BPeliculasActualizada
         {
             Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            MostrarPeliculas mp = new MostrarPeliculas();
+            mp.Show();
+        }
     }
 }

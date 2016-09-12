@@ -23,5 +23,10 @@ namespace BPeliculasActualizada
         {
 
         }
+
+        private void MostrarPersonas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

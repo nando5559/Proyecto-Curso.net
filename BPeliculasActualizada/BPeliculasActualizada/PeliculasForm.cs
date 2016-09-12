@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
 using Reglas;
+using Newtonsoft.Json;
 namespace BPeliculasActualizada
 {
     public partial class PeliculasForm : Form
@@ -16,27 +17,33 @@ namespace BPeliculasActualizada
         public PeliculasForm()
         {
             InitializeComponent();
-            PeliculaMapper PeliculaLista = new PeliculaMapper();
-            DatosPeliculas.DataSource = PeliculaLista.ObtenerTodas();
+           // PeliculaMapper PeliculaLista = new PeliculaMapper();
+          //  DatosPeliculas.DataSource = PeliculaLista.ObtenerTodas();
         }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string NombrePeli; 
-              
-            int  AnioEstrenoD;
-            NombrePeli = textBox1.Text;
-            GeneroD = textBox2.Text;
-            AnioEstrenoD = Convert.ToInt32(textBox3.Text);
-         var   ActoresD = textBox4.Text;
-          var   DirectoresD = textBox5.Text;
-            DatosPeliculas.Rows.Add(NombrePeli, GeneroD,AnioEstrenoD,ActoresD,DirectoresD);
+
            
+            string NombrePeli;
+            string GeneroD;
+            int  AnioEstrenoD;
+            string ActoresD;
+            NombrePeli = textBox1.Text;
+          //  GeneroD = textBox2.Text;
+            AnioEstrenoD = Convert.ToInt32(textBox3.Text);
+          // ActoresD = textBox4.Text;
+         // var   DirectoresD = textBox5.Text;
+            DatosPeliculas.Rows.Add(NombrePeli, AnioEstrenoD); //GeneroD );//ActoresD,DirectoresD);
+           
+        
             Pelicula peli = new Pelicula();
             peli.Nombre = NombrePeli;
-          peli.Genero = (Genero)GeneroD;
+           // peli.Genero.Descripcion = genero;
             peli.AnioEstreno = AnioEstrenoD;
-           // peli.Actores= ActoresD ;
+          // peli.Actores.Add(ActoresD);
+
           // peli.Actores = DirectoresD;
            PeliculaMapper peliMapper = new PeliculaMapper();
             peliMapper.Grabar(peli);
@@ -66,6 +73,28 @@ namespace BPeliculasActualizada
         private void PeliculasForm_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+    //    private void textBox4_TextChanged(object sender, EventArgs e)
+      //  {
+
+       // }
+
+      //  private void textBox5_TextChanged(object sender, EventArgs e)
+       // {
+
+      //  }
+
+        public Genero Entidades { get; set; }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Entidades
         public List<Guid> IdActores { get; set; }
 
         [JsonIgnore]
-        public List<Persona> Actores { get; private set; }
+        public List<Persona> Actores { get;  set; }
 
 
         public List<Guid> IdDirectores { get; set; }

@@ -68,6 +68,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostrarPeliculas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarPeliculas.Designer.cs">
+      <DependentUpon>MostrarPeliculas.cs</DependentUpon>
+    </Compile>
     <Compile Include="MostrarPersonasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MostrarPeliculas.resx">
+      <DependentUpon>MostrarPeliculas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MostrarPersonasForm.resx">
       <DependentUpon>MostrarPersonasForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +123,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\DataSources\Entidades.Persona.datasource" />
     <None Include="Properties\Settings.settings">
@@ -138,6 +148,9 @@
       <Project>{9cc44e6b-2c33-4993-96ef-18ec3a026635}</Project>
       <Name>Reglas</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_0040.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

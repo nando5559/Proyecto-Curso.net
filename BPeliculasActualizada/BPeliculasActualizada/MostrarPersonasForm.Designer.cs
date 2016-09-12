@@ -40,6 +40,7 @@
             this.MostrarPersonas.Name = "MostrarPersonas";
             this.MostrarPersonas.Size = new System.Drawing.Size(761, 316);
             this.MostrarPersonas.TabIndex = 0;
+            this.MostrarPersonas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MostrarPersonas_CellContentClick);
             // 
             // MostrarPersonasForm
             // 

@@ -5,5 +5,7 @@ namespace Entidades
     {
         public string Descripcion { get; set; }
 
+
+        
     }
 }
