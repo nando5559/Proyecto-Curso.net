@@ -22,7 +22,7 @@ namespace BPeliculasActualizada
 
         private void MostrarPeliculas_Load(object sender, EventArgs e)
         {
-
+           
         }
     }
 }

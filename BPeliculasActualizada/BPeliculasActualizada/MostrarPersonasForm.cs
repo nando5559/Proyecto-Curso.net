@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 using Reglas;
 namespace BPeliculasActualizada
 {
@@ -21,7 +22,7 @@ namespace BPeliculasActualizada
 
         private void MostrarPersonasForm_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         private void MostrarPersonas_CellContentClick(object sender, DataGridViewCellEventArgs e)

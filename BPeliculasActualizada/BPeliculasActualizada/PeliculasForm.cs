@@ -7,13 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
+
 using Reglas;
+
 using Newtonsoft.Json;
+using Entidades;
 namespace BPeliculasActualizada
 {
     public partial class PeliculasForm : Form
     {
+      
+               
         public PeliculasForm()
         {
             InitializeComponent();
@@ -24,23 +28,23 @@ namespace BPeliculasActualizada
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-           
+          
+         
             string NombrePeli;
             string GeneroD;
             int  AnioEstrenoD;
-            string ActoresD;
+           // string ActoresD;
             NombrePeli = textBox1.Text;
-          //  GeneroD = textBox2.Text;
+            GeneroD = textBox2.Text;
             AnioEstrenoD = Convert.ToInt32(textBox3.Text);
           // ActoresD = textBox4.Text;
          // var   DirectoresD = textBox5.Text;
-            DatosPeliculas.Rows.Add(NombrePeli, AnioEstrenoD); //GeneroD );//ActoresD,DirectoresD);
-           
+            DatosPeliculas.Rows.Add(NombrePeli, AnioEstrenoD,GeneroD );//ActoresD,DirectoresD);
         
+              
             Pelicula peli = new Pelicula();
             peli.Nombre = NombrePeli;
-           // peli.Genero.Descripcion = genero;
+           // peli.Genero.
             peli.AnioEstreno = AnioEstrenoD;
           // peli.Actores.Add(ActoresD);
 
@@ -54,10 +58,10 @@ namespace BPeliculasActualizada
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-        public object GeneroD { get; set; }
+       // public object GeneroD { get; set; }
 
         public object AnioEstrenoD { get; set; }
 

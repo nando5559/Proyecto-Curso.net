@@ -37,7 +37,7 @@ namespace BPeliculasActualizada
 
             //var pm = new PeliculaMapper();
            // pm.Grabar(pelicula1);
-            var pelisform = new PeliculasForm();
+            var pelisform = new peliculasForm2();
             pelisform.Show();
 
         }
@@ -69,6 +69,11 @@ namespace BPeliculasActualizada
         {
             MostrarPeliculas mp = new MostrarPeliculas();
             mp.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

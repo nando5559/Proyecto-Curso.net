@@ -7,19 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Entidades;
+
 namespace BPeliculasActualizada
 {
-    public partial class BuscarPersonasForm : Form
+    public partial class Form2 : Form
     {
-        public BuscarPersonasForm()
+        public Form2()
         {
             InitializeComponent();
-        }
-
-        private void BuscarPersonasForm_Load(object sender, EventArgs e)
-        {
-          
         }
     }
 }

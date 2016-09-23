@@ -86,6 +86,12 @@
     <Compile Include="PeliculasForm.Designer.cs">
       <DependentUpon>PeliculasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="peliculasForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="peliculasForm2.Designer.cs">
+      <DependentUpon>peliculasForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="PersonasForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,8 +115,8 @@
     <EmbeddedResource Include="MostrarPersonasForm.resx">
       <DependentUpon>MostrarPersonasForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PeliculasForm.resx">
-      <DependentUpon>PeliculasForm.cs</DependentUpon>
+    <EmbeddedResource Include="peliculasForm2.resx">
+      <DependentUpon>peliculasForm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonasForm.resx">
       <DependentUpon>PersonasForm.cs</DependentUpon>
